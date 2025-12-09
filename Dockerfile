@@ -1,4 +1,4 @@
-FROM php:8.3.28-apache
+FROM php:8.4-apache
 RUN apt-get update && apt-get install -y \
     libicu-dev libonig-dev libxml2-dev libzip-dev zip unzip git curl \
     && docker-php-ext-install intl pdo pdo_mysql zip opcache
